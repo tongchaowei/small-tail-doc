@@ -11,7 +11,7 @@ name: 部署 Small Tail Doc
 on:
   push:
     branches:
-      - github-page
+      - main
   # 允许我们在 GitHub 仓库的 Actions 选项卡中手动触发允许此工作流
   workflow_dispatch:
 
