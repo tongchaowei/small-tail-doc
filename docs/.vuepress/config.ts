@@ -3,7 +3,7 @@ import {defineUserConfig} from 'vuepress'
 import {plumeTheme} from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/small-tail-doc/',
   lang: 'zh-CN',
   title: 'Small Tail Doc',
   description: '小尾巴文档',
@@ -12,7 +12,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     // 添加您的部署域名
-    // hostname: 'https://your_site_url',
+    hostname: 'https://tongchaowei.github.io/small-tail-doc/',
     // your git repo url
     docsRepo: 'https://gitee.com/tongchaowei/small-tail-doc',
     docsDir: 'docs',
