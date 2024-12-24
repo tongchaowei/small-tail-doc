@@ -3,7 +3,7 @@ import {defineUserConfig} from 'vuepress'
 import {plumeTheme} from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/small-tail-doc/',
+  base: '/',
   lang: 'zh-CN',
   title: 'Small Tail Doc',
   description: '小尾巴文档',
