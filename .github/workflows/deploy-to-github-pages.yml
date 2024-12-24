@@ -72,7 +72,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         # 向 uses 指令中指定的工作流传递参数, 需要上传什么目录下的文件到 GitHub Pages
         with:
-          path: docs/.vitepress/dist
+          path: docs/.vuepress/dist
   # 在 GitHub Pages 上部署文档项目的构建结果
   deploy:
     name: 部署文档项目
