@@ -29,7 +29,10 @@ const sidebar: SidebarItem[] = [
     link: '/st-common-core/',
     prefix: '/st-common-core/',
     collapsed: true,
-    items: []
+    items: [
+      {text: '开始使用', link: 'start/'},
+      {text: '数组', link: 'arr/'}
+    ]
   },
   {
     text: 'st-common-encrypt',

@@ -4,7 +4,7 @@ createTime: 2024/12/24 03:10:48
 permalink: /st-common-ui-styles/
 ---
 
-Small Tail 通用 UI 样式库
+Small Tail 前端通用 UI 样式库
 
 <LinkCard title="Npm" href="https://www.npmjs.com/package/st-common-ui-styles" icon="devicon:npm"/>
 <LinkCard title="Gitee" href="https://gitee.com/tongchaowei/small-tail-common-ui-styles" icon="simple-icons:gitee"/>
