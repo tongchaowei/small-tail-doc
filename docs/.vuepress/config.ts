@@ -17,9 +17,32 @@ export default defineUserConfig({
     docsRepo: 'https://gitee.com/tongchaowei/small-tail-doc',
     docsDir: 'docs',
 
+    // 文章变更历史
+    changelog: true,
+    // 文章贡献者
+    contributors: {
+      mode: 'block',
+      info: [
+        {
+          username: 'tongchaowei',
+          alias: ['small tail'],
+          url: 'https://gitee.com/tongchaowei',
+          avatar: '/avatar.jpg'
+        }
+      ]
+    },
+    // 页面页脚
     footer: false,
+    // 文档页面中的大纲
+    outline: [2, 4],
 
     plugins: {
+      /**
+       * 文章变更配置
+       */
+      // 开发环境和生产环境都启用
+      git: true,
+
       /**
        * Shiki 代码高亮
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
