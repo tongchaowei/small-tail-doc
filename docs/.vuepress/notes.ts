@@ -8,7 +8,19 @@ const sidebar: SidebarItem[] = [
     collapsed: true,
     items: [
       {text: '开始使用', link: 'start/'},
-      {text: 'IconIconify', link: 'icon-iconify/'},
+      {
+        text: '组件',
+        collapsed: true,
+        items: [
+          {text: 'IconIconify', link: 'icon-iconify/'},
+        ]
+      },
+      {
+        text: '工具',
+        collapsed: true,
+        items: [
+        ]
+      },
     ]
   },
   {
