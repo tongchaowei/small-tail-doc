@@ -7,7 +7,8 @@ const sidebar: SidebarItem[] = [
     prefix: '/st-common-ui-vue3/',
     collapsed: true,
     items: [
-      {text: '开始使用', link: 'start/'}
+      {text: '开始使用', link: 'start/'},
+      {text: 'IconIconify', link: 'icon-iconify/'},
     ]
   },
   {
