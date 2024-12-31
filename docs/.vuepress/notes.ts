@@ -38,7 +38,8 @@ const sidebar: SidebarItem[] = [
         prefix: 'components/',
         collapsed: true,
         items: [
-          {text: 'Table', link: 'table/'},
+          {text: '表格 Table', link: 'table/'},
+          {text: '折叠搜索 CollapseSearch', link: 'collapse-search/'},
         ]
       },
     ]

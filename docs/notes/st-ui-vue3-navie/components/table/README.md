@@ -32,6 +32,13 @@ StnTable 是基于 [Navie UI 数据表格](https://www.naiveui.com/zh-CN/os-them
 | load-tree-data    | 表格异步展开树形数据事件     | `rowData: object` - 行数据                   | `Promise<void>` |
 | col-showed-change | 展示的表格列发生变化时触发的事件 | `columns: StnDataTableColumns` - 展示的表格列配置 | `void`          |
 
+## 组件插槽
+
+| 插槽名        | 描述            | 参数 |
+|------------|---------------|----|
+| search     | 表格数据搜索筛选区域的内容 |    |
+| operations | 表格操作按钮区域的内容   |    |
+
 ## 组件样式
 
 1. 数据表格容器区域的背景样式可以通过样式类名 `box-bg` 设置
@@ -39,6 +46,7 @@ StnTable 是基于 [Navie UI 数据表格](https://www.naiveui.com/zh-CN/os-them
 ## 表格列配置的预处理
 
 1. 如果通过组件参数 `isUseBuiltInSelectColumn` 启用了组件内置的勾选列的配置，那么将会在表格列配置的最前面插入一个勾选列的配置，组件内置的勾选列的配置如下：
+
 ```typescript
 const selectableColumn: StnDataTableColumn = {
   type: 'selection',
@@ -50,12 +58,14 @@ const selectableColumn: StnDataTableColumn = {
   fixed: 'left',
 }
 ```
+
 2. 对于通过组件参数 `columns` 传入的所有表格列的配置，都会进行以下预处理：
-   - 如果原来的列配置中具有 `checked` 属性，且值为 `false`，则该列的 `checked` 属性设置为 `false`，否则设置为 `true`；并将初始状态下的 `checked` 属性值保存到 `originChecked` 属性中，`checked` 属性用于后续动态控制该列是否显示；
-   - 如果原来的列配置中具有 `draggable` 属性，且值为 `false`，则该列的 `draggable` 属性设置为 `false`，否则设置为 `true`；
-   - 如果原来的列配置中不具有 `align` 属性，则为该列配置添加 `align` 属性并设置属性值为 `'center'`；并将初始状态下的 `align` 属性值保存到 `originAlign` 属性中，`align` 属性用于后续动态控制该列单元格内容的对齐方式；
-   - 初始状态下的 `fixed` 属性值保存到 `originFixed` 属性中，`fixed` 属性用于后续动态控制该列是否固定在表格左侧或右侧，==需要注意，只有传入的列配置中包含 `fixed` 属性时，即列配置对象中 `fixed` 属性值不为 `undefined` 时，才能在后续动态控制该列是否固定或取消固定在表格左侧或右侧==；
-   - 根据每个列配置对象在列配置列表中的位置，为其添加 `sort` 属性，该属性的值为该列配置在列表中的索引位置，标识初始状态下每个表格列的排序顺序，以此来实现后续表格列位置拖拽后的排序重置；
+
+- 如果原来的列配置中具有 `checked` 属性，且值为 `false`，则该列的 `checked` 属性设置为 `false`，否则设置为 `true`；并将初始状态下的 `checked` 属性值保存到 `originChecked` 属性中，`checked` 属性用于后续动态控制该列是否显示；
+- 如果原来的列配置中具有 `draggable` 属性，且值为 `false`，则该列的 `draggable` 属性设置为 `false`，否则设置为 `true`；
+- 如果原来的列配置中不具有 `align` 属性，则为该列配置添加 `align` 属性并设置属性值为 `'center'`；并将初始状态下的 `align` 属性值保存到 `originAlign` 属性中，`align` 属性用于后续动态控制该列单元格内容的对齐方式；
+- 初始状态下的 `fixed` 属性值保存到 `originFixed` 属性中，`fixed` 属性用于后续动态控制该列是否固定在表格左侧或右侧，==需要注意，只有传入的列配置中包含 `fixed` 属性时，即列配置对象中 `fixed` 属性值不为 `undefined` 时，才能在后续动态控制该列是否固定或取消固定在表格左侧或右侧==；
+- 根据每个列配置对象在列配置列表中的位置，为其添加 `sort` 属性，该属性的值为该列配置在列表中的索引位置，标识初始状态下每个表格列的排序顺序，以此来实现后续表格列位置拖拽后的排序重置；
 
 ## 类型定义
 
