@@ -1,7 +1,7 @@
 ---
 title: StIconIconify 与 StIconIconifyOffline
 createTime: 2024/12/30 17:17:40
-permalink: /st-common-ui-vue3/icon-iconify/
+permalink: /st-common-ui-vue3/components/icon-iconify/
 ---
 
 StIconIconify 是基于 [Iconify](https://iconify.design/) 封装的图标组件

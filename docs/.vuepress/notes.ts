@@ -10,6 +10,7 @@ const sidebar: SidebarItem[] = [
       {text: '开始使用', link: 'start/'},
       {
         text: '组件',
+        prefix: 'components/',
         collapsed: true,
         items: [
           {text: 'IconIconify', link: 'icon-iconify/'},
@@ -17,8 +18,10 @@ const sidebar: SidebarItem[] = [
       },
       {
         text: '工具',
+        prefix: 'utils/',
         collapsed: true,
         items: [
+          {text: 'Iconify', link: 'iconify/'},
         ]
       },
     ]
