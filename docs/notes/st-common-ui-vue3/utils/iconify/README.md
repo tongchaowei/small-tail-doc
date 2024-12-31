@@ -14,6 +14,10 @@ import {getIconifySetIcons} from 'st-common-ui-vue3'
 
 ## Iconify Queries API
 
+::: tip 提示
+对 [Iconify Queries API](https://iconify.design/docs/api/queries.html) 封装的工具函数，都是采用 fetch 向 [https://api.iconify.design](https://api.iconify.design) 发送相应的请求。
+:::
+
 ### getIconifyIconSvg
 
 获取 Iconify 指定图标集指定图标的 SVG 代码字符串
@@ -157,6 +161,10 @@ import {getIconifySetIcons} from 'st-common-ui-vue3'
 
 ## Iconify for Vue Functions
 
+::: tip 提示
+对 [Iconify for Vue Functions](https://iconify.design/docs/icon-components/vue/icon-exists.html) 封装的工具函数，都仅是对 Iconify for Vue Function 的一层简单的包裹，主要是为了用户在安装了当前组件库后无需另外安装 `@iconify/vue`。
+:::
+
 ### iconifyIconExists
 
 检查图标数据是否可用于渲染
@@ -292,6 +300,10 @@ import {getIconifySetIcons} from 'st-common-ui-vue3'
 | `void` | 无返回值 |
 
 ## 类型定义
+
+::: tip 提示
+以下的类型定义为当前组件库中的自定义类型，并非 Iconify 官方提供的类型定义，当然代码来源于 Iconify 官方文档。
+:::
 
 ### IconifySetIcons
 
