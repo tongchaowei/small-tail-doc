@@ -31,7 +31,17 @@ const sidebar: SidebarItem[] = [
     link: '/st-ui-vue3-navie/',
     prefix: '/st-ui-vue3-navie/',
     collapsed: true,
-    items: []
+    items: [
+      {text: '开始使用', link: 'start/'},
+      {
+        text: '组件',
+        prefix: 'components/',
+        collapsed: true,
+        items: [
+          {text: 'Table', link: 'table/'},
+        ]
+      },
+    ]
   },
   {
     text: 'st-common-ui-styles',
