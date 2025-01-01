@@ -4,7 +4,22 @@ createTime: 2024/12/31 22:46:20
 permalink: /st-ui-vue3-navie/components/iconify-icon-selector/
 ---
 
-StnIconifyIconSelector 是一个 Iconify 图标选择器组件。该组件主要是基于 Navie [Tabs 标签页](https://www.naiveui.com/zh-CN/os-theme/components/tabs)、 [Grid 栅格](https://www.naiveui.com/zh-CN/os-theme/components/grid)、[Pagination 分页](https://www.naiveui.com/zh-CN/os-theme/components/pagination) 等组件封装而成。
+StnIconifyIconSelector 是一个 Iconify 图标选择器组件。该组件主要是基于 Naive [Tabs 标签页](https://www.naiveui.com/zh-CN/os-theme/components/tabs)、 [Grid 栅格](https://www.naiveui.com/zh-CN/os-theme/components/grid)、[Pagination 分页](https://www.naiveui.com/zh-CN/os-theme/components/pagination) 等组件封装而成。
+
+## 使用前提
+
+由于在该组件中使用了 [Naive UI useMessage API](https://www.naiveui.com/zh-CN/os-theme/components/message) 来显示提示信息，所以在使用该组件之前，与使用 [Naive UI useMessage API](https://www.naiveui.com/zh-CN/os-theme/components/message) 一样，需要在项目中使用 NMessageProvider 组件包裹根组件中的内容，以此来保证全局消息提示功能的正常提供和使用。
+::: code-tabs
+@tab App.vue
+```vue
+<template>
+  <n-message-provider>
+    <!-- App.vue 根组件的内容... -->
+  </n-message-provider>
+</template>
+```
+:::
+
 
 ## 组件参数
 
