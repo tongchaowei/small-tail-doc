@@ -13,7 +13,7 @@ const sidebar: SidebarItem[] = [
         prefix: 'components/',
         collapsed: true,
         items: [
-          {text: 'IconIconify', link: 'icon-iconify/'},
+          {text: '图标 IconIconify', link: 'icon-iconify/'},
         ]
       },
       {
@@ -43,6 +43,7 @@ const sidebar: SidebarItem[] = [
           {text: '表格操作 TableOperations', link: 'table-operations/'},
           {text: '表格列设置 TableColSetting', link: 'table-col-setting/'},
           {text: '表格编辑删除按钮组 TableEditorDelBtnGroup', link: 'table-editor-del-btn-group/'},
+          {text: '图标选择器 IconifyIconSelector', link: 'iconify-icon-selector/'},
         ]
       },
     ]
