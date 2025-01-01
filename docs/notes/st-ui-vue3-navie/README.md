@@ -8,5 +8,4 @@ permalink: /st-ui-vue3-navie/
 
 <LinkCard title="Npm" href="https://www.npmjs.com/package/st-ui-vue3-navie" icon="devicon:npm"/>
 <LinkCard title="Gitee" href="https://gitee.com/tongchaowei/small-tail-ui-vue3-navie" icon="simple-icons:gitee"/>
-
-[//]: # (<LinkCard title="bilibili" href="https://www.bilibili.com/video/BV1nQD3YvE5q/" icon="fa6-brands:bilibili"/>)
+<LinkCard title="bilibili" href="https://space.bilibili.com/344049673/lists/4456853" icon="fa6-brands:bilibili"/>
