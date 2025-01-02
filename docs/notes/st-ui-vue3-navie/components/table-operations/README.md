@@ -24,12 +24,13 @@ StnTableOperations 是封装了对 [StnTable 表格组件](/st-ui-vue3-navie/com
 
 ## 组件插槽
 
-| 插槽名            | 描述         | 参数                              |
-|----------------|------------|---------------------------------|
-| add            | 新增按钮       |                                 |
-| add-icon       | 新增按钮的图标    |                                 |
-| batch-del      | 批量删除按钮     |                                 |
-| batch-del-icon | 批量删除按钮的图标  |                                 |
-| refresh        | 刷新按钮       |                                 |
-| refresh-icon   | 刷新按钮的图标    |                                 |
-| affix          | 自定义操作按钮的区域 | `isCollapse: boolean` - 是否要折叠按钮 |
+| 插槽名            | 描述          | 参数                              |
+|----------------|-------------|---------------------------------|
+| add            | 新增按钮        |                                 |
+| add-icon       | 新增按钮的图标     |                                 |
+| batch-del      | 批量删除按钮      |                                 |
+| batch-del-icon | 批量删除按钮的图标   |                                 |
+| refresh        | 刷新按钮        |                                 |
+| refresh-icon   | 刷新按钮的图标     |                                 |
+| affix          | 自定义操作按钮的区域  | `isCollapse: boolean` - 是否要折叠按钮 |
+| dropdown-icon  | 触发下拉弹框显示的图标 |                                 |
